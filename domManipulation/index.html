@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="darkMode('.row',this)"> Dark mode ON</button>
+    <div class="row ">
+        <div>
+            <label for=""> Username: </label>
+            <input type="text" id="username">
+        </div>
+        <div>
+            <label for="">language:</label>
+      
+        <select name="" id="language">
+            <option selected value="js">Javascript React</option>
+            <option value="c#"> C# NET</option>
+            <option value="java"> Java Spring </option>
+        </select>
+        </div>
+        <div>
+            <label for="">Fav Color:</label>
+            <select name="" id="FavColor">
+                <option selected value="red">Red</option>
+                <option value="yellow"> Yellow</option>
+                <option value="pink"> Pink </option>
+            </select>
+        </div>
+        <button onclick="SubmitForm()">Submit</button>
+        
+    </div>
+
+    <div class="row2">
+      <label for="">Username:</label>  <h2 id="unH2"> </h2>
+      <label for="">Programming Language:</label>  <h2 id="plh2"> </h2>
+    </div>
+    <h6 id="ad1" onclick="RemoveAD(this)"> ADS </h6>
+    <h6 id="ad2" onclick="RemoveAD(this)"> ADS number 2 </h6>
+    <h6 id="ad3" onclick="RemoveAD(this)"> AD number 3 </h6>
+
+    <h3 id="ad1" onclick="RemoveAD(this)"> ADS </h3>
+    <h3 id="ad2" onclick="RemoveAD(this)"> ADS number 2 </h3>
+    <h3 id="ad3" onclick="RemoveAD(this)"> AD number 3 </h3>
+
+    <button onclick="RemoveAdByButton('#ad1')"> Remove Ad 1</button>
+    <button onclick="RemoveAdByButton('#ad2')"> Remove Ad 2</button>
+    <button onclick="RemoveAdByButton('#ad3')"> Remove Ad 3</button>
+    <button onclick="RemoveAllAds('h3')"> Remove all h3 ads</button>
+    <button onclick="RemoveAllAds('h6')"> Remove all h6 ads</button>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
